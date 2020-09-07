@@ -7,7 +7,7 @@ fun main() {
     val pricePurchaseSumm = 11_000.00
     var currentPurchaseSumm = pricePurchaseSumm
 
-    if ((previousePurchasesSumm > 1_001) && (previousePurchasesSumm < 10_000))
+    if ((previousePurchasesSumm > 1_001) && (previousePurchasesSumm <= 10_000))
         currentPurchaseSumm -= discountFix
     if (previousePurchasesSumm > 10_001)
         currentPurchaseSumm = currentPurchaseSumm * (1 - discountPercent)
